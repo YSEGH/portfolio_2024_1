@@ -1,0 +1,91 @@
+.skill {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-title span {
+  color: var(--white);
+  text-align: center;
+  font-family: "Helvetica Neue";
+  font-size: var(--fts-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.skills-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.skill-item {
+  position: absolute;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: var(--fts-md);
+}
+
+.react {
+  top: 10vh;
+  left: 13vw;
+}
+.typescript {
+  bottom: 10vh;
+  right: 13vw;
+}
+.javascript {
+  top: 12vh;
+  right: 17vw;
+}
+.html {
+  bottom: 14vh;
+  left: 17vw;
+}
+.css {
+  bottom: 10vh;
+  left: 35vw;
+}
+.bootstrap {
+  top: 6vh;
+  left: 40vw;
+}
+.threejs {
+  top: 40vh;
+  right: 18vw;
+}
+.drupal {
+  top: 40vh;
+  left: 20vw;
+}
+.nextjs {
+  bottom: 30vh;
+  left: 12vw;
+}
+.php {
+  bottom: 35vh;
+  right: 12vw;
+}
+.wordpress {
+  bottom: 6vh;
+  right: 30vw;
+}
+
+@media screen and (max-width: 1020px) {
+  .skill-title span {
+    font-size: 44px;
+  }
+}

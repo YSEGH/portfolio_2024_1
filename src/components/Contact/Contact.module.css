@@ -1,0 +1,23 @@
+.contact {
+  background-color: var(--red);
+  width: 100%;
+}
+.contact-title {
+  padding: 5rem 3rem 0;
+}
+.title {
+  margin: 0;
+  color: var(--white);
+  font-family: "Helvetica Neue";
+  font-size: var(--fts-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+@media screen and (max-width: 1020px) {
+  .contact-title {
+    padding: 3rem 1.5rem 0;
+  }
+  .title {
+    font-size: var(--fts-xl);
+  }
+}

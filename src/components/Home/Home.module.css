@@ -1,0 +1,49 @@
+.home {
+  position: relative;
+  background: url("/moi.jpg");
+  background-size: cover;
+  background-position: center top;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(23, 23, 23, 0.358);
+}
+.home-title {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.home-title span {
+  color: var(--white);
+  font-family: "Helvetica Neue";
+  font-size: var(--fts-xxl);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.full {
+  margin-left: 3rem;
+}
+.stack {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1020px) {
+  .home-title span {
+    font-size: 60px;
+  }
+}

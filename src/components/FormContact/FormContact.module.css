@@ -1,0 +1,46 @@
+.form-contact {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+.form-input {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 3rem;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  border-top: 1px solid var(--white);
+  background-color: transparent;
+  outline: none;
+  line-height: 24px;
+}
+.form-input::placeholder {
+  color: var(--white);
+}
+.input-message::-webkit-scrollbar {
+  display: none;
+}
+.input-submit {
+  width: 100%;
+  border: none;
+  color: var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.input-submit:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media screen and (max-width: 1020px) {
+  .form-input {
+    padding: 1.5rem;
+    font-size: var(--fts-md);
+    line-height: var(--fts-md);
+  }
+}

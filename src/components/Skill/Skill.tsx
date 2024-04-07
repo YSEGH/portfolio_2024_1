@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import styles from "./Skill.module.css";
 import cx from "classnames";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -13,10 +16,14 @@ const Skill = (props: Props) => {
         <span>Design.</span>
       </div>
       <div className={styles["skills-wrapper"]}>
-        {skills.map((skill) => (
-          <span className={cx(styles[skill], styles["skill-item"])}>
+        {skills.map((skill, i) => (
+          <motion.span
+            drag
+            key={`${skill}-${i}`}
+            className={cx(styles[skill], styles["skill-item"])}
+          >
             {skill}
-          </span>
+          </motion.span>
         ))}
       </div>
     </div>

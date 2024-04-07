@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter } from "./font";
 import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
+import Nav from "@/components/Nav/Nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Nav />
         <AppProvider>{children}</AppProvider>
       </body>
     </html>
